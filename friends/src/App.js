@@ -1,12 +1,26 @@
 import React from 'react';
+import Login from './Components/Login';
+import { Link, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Friends from './Components/Friends';
+import PrivateRoute from './Components/PrivateRoute';
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Addison was here</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <nav className="nav">
+          <Link className="link" to="/login">Login</Link>
+          <Link className="link" to="/protected">Friends</Link>
+        </nav>
+        <Switch>
+          <PrivateRoute path='/protected' component={Friends} />
+          <Route path="/login" component={Login} />
+          <Route component={Login} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
