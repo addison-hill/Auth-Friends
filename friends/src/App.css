@@ -1,0 +1,62 @@
+body {
+  background-color: grey;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  float: inline-end;
+  height: 50px;
+  padding-left: 1200px; 
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.card {
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.friends-list {
+  display: inline-grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.input {
+  margin: 10px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.btn {
+  height: 30px;
+  margin-top: 14px;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+.title {
+  color: lightblue;
+}
